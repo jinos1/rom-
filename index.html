@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap" rel="stylesheet">
+
+
+    <title>3ilawa</title>
+    <link rel="icon" type="icon" href="logo.png">
+</head>
+<body>
+<div class="container"> 
+    <header class="header">
+        <img src="icons\logo.png" alt="logo" class="header_img">
+        <div class="links_input">
+            <nav class="nav-links">
+                <a href="index.html"><img src="icons\home.png"><p>Home</p></a>
+                <a href="Commenity.html"><img src="icons\group.png"><p>Commenity</p></a>
+                <a href="https://youtu.be/dxXXFDuL9aY?si=wDCLeeg1qqldZYCI"><img src="icons\youtube.png"><p>Youtube</p></a>
+                <a href="https://t.me/jinos16"><img src="icons\telegram.png"><p>Telegram</p></a>
+                <a href="login.html" class="login"><img src="icons\login.png"><p>Login</p></a>
+            </nav>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search...">
+            </div>  
+        </div>
+    </header>
+
+    <div class="list" id="appList">
+ 
+
+        <div class="up-app">
+            <div class="app">
+               <a href="Episode1.html"><img src="icons\vid1.jpg" alt="vid1.jpg"></a>
+                <h3>
+                    :الحلقة1
+                  
+                </h3>
+            </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+    <script>
+        document.getElementById('searchInput').addEventListener('input', function() {
+            const searchValue = this.value.toLowerCase();
+            const apps = document.querySelectorAll('.app');
+
+            apps.forEach(app => {
+                const appName = app.querySelector('h3').textContent.toLowerCase();
+                if (appName.includes(searchValue)) {
+                    app.style.display = '';
+                } else {
+                    app.style.display = 'none';
+                }
+            });
+        });
+    </script>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap" rel="stylesheet">
+    <title>JINOS7</title>
+    <link rel="icon" href="icons/logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body> 
+    <header class="header">
+        <img src="icons\logo.png" alt="logo" class="header_img">
+        <div class="links_input">
+            <nav class="nav-links">
+                <a href="index.html"><img src="icons\home.png"><p>Home</p></a>
+                <a href="Commenity.html"><img src="icons\group.png"><p>Commenity</p></a>
+                <a href="https://youtu.be/dxXXFDuL9aY?si=wDCLeeg1qqldZYCI"><img src="icons\youtube.png"><p>Youtube</p></a>
+                <a href="https://t.me/jinos16"><img src="icons\telegram.png"><p>Telegram</p></a>
+                <a href="login.html" class="login"><img src="icons\login.png"><p>Login</p></a>
+            </nav>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search...">
+            </div>  
+        </div>
+    </header>
+  
+
+    <div class="list1" id="appList">
+ 
+
+        <div class="up-app1">
+            <div class="app1">
+               <a href="https://youtu.be/dxXXFDuL9aY?si=wDCLeeg1qqldZYCI.html"><img src="icons\vid1.jpg" alt="vid1.jpg"></a>
+                <h3>
+                    الفيديو المنتضر لأصحاب 1و2 جيغا رام، تشغيل فري فاير على جهاز من عصر الفراعنة (فيديو بدون موسيقى).
+                </h3>
+                <p class="description">
+:مقدمة
+
+Poneix OS هو نظام تشغيل مبتكر يعتمد على نواة لينكس، مصمم لتلبية احتياجات مجموعة متنوعة من المستخدمين. يتميز بواجهة مستخدم سلسة وأداء متميز، مما يجعله خيارًا شائعًا بين المبتدئين والمحترفين على حد سواء.
+
+ميزات واجهة المستخدم
+تتميز واجهة Poneix OS بتصميم بسيط وجذاب، مما يسهل على المستخدمين التنقل بين التطبيقات والإعدادات. توفر الواجهة خيارات تخصيص متعددة، مما يسمح للمستخدمين بتعديل المظهر والوظائف حسب تفضيلاتهم، مما يعزز من تجربة الاستخدام بشكل كبير.
+
+إدارة الحزم والتطبيقات
+يدعم Poneix OS مجموعة واسعة من التطبيقات، مما يجعله ملائمًا لمختلف المهام. يحتوي النظام على نظام إدارة حزم متطور يتيح تثبيت وتحديث البرامج بسهولة. يمكن للمستخدمين الوصول إلى مكتبة ضخمة من التطبيقات المجانية والمفتوحة المصدر، مما يعزز من إنتاجيتهم.
+
+الأمان والحماية
+الأمان هو أحد أولويات Poneix OS، حيث يتضمن مجموعة من الميزات المتقدمة لحماية البيانات. تشمل هذه الميزات التشفير والدفاع ضد البرمجيات الخبيثة. بالإضافة إلى ذلك، يتم تحديث النظام بشكل دوري لتوفير تعزيزات أمنية تحميه من التهديدات المستمرة.
+
+الأداء والاستدامة
+يعمل Poneix OS على تحسين أداء الأجهزة، مما يجعله خيارًا مثاليًا للأجهزة القديمة. يركز النظام على تقليل استهلاك الموارد، مما يساهم في استدامة البيئة. يساعد ذلك المستخدمين على إعادة استخدام الأجهزة بدلاً من التخلص منها، مما يقلل من الفاقد الإلكتروني.
+
+الخاتمة
+في الختام، Poneix OS هو نظام تشغيل قوي ومبتكر يوفر مزيجًا من الأداء العالي، الأمان الفائق، وإمكانيات التخصيص الواسعة. إذا كنت تبحث عن بديل للأنظمة التقليدية، فإن Poneix OS يمثل خيارًا يستحق التجربة.
+
+
+
+
+                </p>
+                <a href="http://www.mediafire.com/file/uhkm5cpb7pmrqea/phoenix_os.rar/file"><p>Download emulator.exe</p></a>
+            
+            </div>
+
+
+    <footer>
+        <p>&copy; 2024 Jinos.io. جميع الحقوق محفوظة.</p>
+    </footer>
+    <script>
+        document.getElementById('searchInput').addEventListener('input', function() {
+            const searchValue = this.value.toLowerCase();
+            const apps = document.querySelectorAll('.app1');
+
+            apps.forEach(app => {
+                const appName = app.querySelector('h3').textContent.toLowerCase();
+                if (appName.includes(searchValue)) {
+                    app.style.display = '';
+                } else {
+                    app.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
